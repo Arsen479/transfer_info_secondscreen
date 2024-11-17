@@ -97,9 +97,6 @@ class _MyHomePageState extends State<MyHomePage> {
               SizedBox(
                 height: 10,
               ),
-              SizedBox(
-                height: 10,
-              ),
               TextField(
                 controller: controllerAge,
                 keyboardType: TextInputType.number,
