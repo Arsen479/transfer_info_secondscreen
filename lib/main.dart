@@ -72,7 +72,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
               TextField(
                 controller: controllerAdress,
                 keyboardType: TextInputType.streetAddress,
@@ -92,7 +94,12 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10,),
+              SizedBox(
+                height: 10,
+              ),
+              SizedBox(
+                height: 10,
+              ),
               TextField(
                 controller: controllerAge,
                 keyboardType: TextInputType.number,
@@ -105,7 +112,10 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 ),
               ),
-              Text('Choose gender', style: TextStyle(fontSize: 15),),
+              Text(
+                'Choose gender',
+                style: TextStyle(fontSize: 15),
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -149,9 +159,15 @@ class _MyHomePageState extends State<MyHomePage> {
                       context,
                       MaterialPageRoute(
                         builder: (context) => Secondscreen(
-                          name:controllerName.text.isNotEmpty ? controllerName.text : 'unknown',
-                          adress:controllerAdress.text.isNotEmpty ? controllerAdress.text : 'unknown',
-                          age:controllerAge.text.isNotEmpty ? int.parse(controllerAge.text) : 0,
+                          name: controllerName.text.isNotEmpty
+                              ? controllerName.text
+                              : 'unknown',
+                          adress: controllerAdress.text.isNotEmpty
+                              ? controllerAdress.text
+                              : 'unknown',
+                          age: controllerAge.text.isNotEmpty
+                              ? int.parse(controllerAge.text)
+                              : 0,
                           gender:
                               male == true ? gend = 'male' : gend = 'female',
                         ),
